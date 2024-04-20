@@ -7,7 +7,7 @@ import (
 )
 
 // Fungsi untuk melakukan penjumlahan
-func penjumlahan(a, b float64) float64 {
+func Penjumlahan(a, b float64) float64 {
 	return a + b
 }
 
@@ -30,17 +30,17 @@ func Pembagian(a, b float64) (float64, error) {
 }
 
 // Fungsi untuk menghitung akar kuadrat
-func akar_kuadrat(x float64) float64 {
+func Akar_Kuadrat(x float64) float64 {
 	return math.Sqrt(x)
 }
 
 // Fungsi untuk menghitung pangkat dua
-func pangkat_dua(x float64) float64 {
+func Pangkat_Dua(x float64) float64 {
 	return x * x
 }
 
 // Fungsi untuk menghitung pangkat tiga
-func pangkat_tiga(x float64) float64 {
+func Pangkat_Tiga(x float64) float64 {
 	return x * x * x
 }
 
@@ -111,7 +111,7 @@ func main() {
 
 	switch choice {
 	case 1:
-		fmt.Println("Hasil Penjumlahan:", penjumlahan(input1, input2))
+		fmt.Println("Hasil Penjumlahan:", Penjumlahan(input1, input2))
 	case 2:
 		fmt.Println("Hasil pengurangan:", Pengurangan(input1, input2))
 	case 3:
@@ -124,11 +124,11 @@ func main() {
 			fmt.Println("Hasil pembagian:", result)
 		}
 	case 5:
-		fmt.Println("Hasil akar kuadrat:", akar_kuadrat(input1))
+		fmt.Println("Hasil akar kuadrat:", Akar_Kuadrat(input1))
 	case 6:
-		fmt.Println("Hasil pangkat dua:", pangkat_dua(input1))
+		fmt.Println("Hasil pangkat dua:", Pangkat_Dua(input1))
 	case 7:
-		fmt.Println("Hasil pangkat tiga:", pangkat_tiga(input1))
+		fmt.Println("Hasil pangkat tiga:", Pangkat_Tiga(input1))
 	case 8:
 		fmt.Println("Hasil sinus:", Sin(input1))
 	case 9:
